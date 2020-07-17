@@ -1,0 +1,21 @@
+[package]
+name = "safe24-service"
+version = "0.1.0"
+authors = ["Richard Meissner <msc.meissner@gmail.com>"]
+
+[dependencies]
+anyhow = "1.0"
+chrono = "0.4.11"
+dotenv = "0.15.0"
+dotenv_codegen = "0.15.0"
+reqwest = { version = "0.10", features = ["blocking", "json"] }
+rocket = "0.4.5"
+serde = "1.0.113"
+serde_json = "1.0.55"
+serde_derive = "1.0.113"
+# web3 = { version = "0.11.0", default-features = false, features = [] }
+
+[dependencies.rocket_contrib]
+version = "0.4.5"
+default-features = false
+features = ["json", "redis_pool"]
