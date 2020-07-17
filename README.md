@@ -1,10 +1,10 @@
 # ⛽ safe24
 
-### safe24 Safe App
+### 🖥️ safe24 Safe App
 
 A Safe App (sApp) that allows Safe Multisig users to buy a safe24 membership and top-up their membership credits. safe24 members get transactions that collected all required signatures automatically relayed by the safe24 service. 
 
-### safe24 service
+### 🏗️ safe24 service
 
 The safe24 service has two main features:
 
