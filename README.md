@@ -1,4 +1,4 @@
-# safe24
+# ⛽ safe24
 
 ### safe24 Safe App
 
