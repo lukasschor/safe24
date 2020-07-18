@@ -19,6 +19,7 @@ struct SafeServiceConfirmation {
 }
 
 pub fn update(context: &Context, payload: &SafeUpdate) -> Result<bool> {
+    println!("Check {} for {}", payload.safeTxHash, payload.address);
     let tx_detail_url = format!("{}/api/v1/transactions/{}/", env::var("SAFE_TX_SERVICE")?, payload.safeTxHash);
     let tx_details: SafeServiceTx = context
         .client()
