@@ -9,6 +9,8 @@ extern crate dotenv;
 extern crate reqwest;
 
 pub mod routes;
+pub mod membership;
+pub mod hooks;
 pub mod utils;
 
 use dotenv::dotenv;

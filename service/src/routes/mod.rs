@@ -5,8 +5,8 @@ use rocket::Route;
 use rocket::Catcher;
 use rocket_contrib::json::JsonValue;
 
-mod hooks;
-mod membership;
+pub mod hooks;
+pub mod membership;
 
 pub fn transaction_routes() -> Vec<Route> {
     routes![hooks::update, membership::status]
