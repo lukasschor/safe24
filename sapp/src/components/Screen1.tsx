@@ -48,7 +48,7 @@ const Screen1: React.FC<Props> = ({ action }) => {
             1) Join Safe24
           </Text>
           <Text size="lg" center>
-            Become a member of Safe24 for just 5 DAI per week
+            Become a member of Safe24 for just $5 per week
           </Text>
         </div>
 
