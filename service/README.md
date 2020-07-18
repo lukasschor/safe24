@@ -10,3 +10,7 @@
 - How to check if Safe has active membership
   - Use local db and update with webhooks
   - Calculate based on events when trying to submit tx (cache with redis)
+
+### Deploy
+- Login to Heroku
+- Run in root `git subtree push --prefix service heroku master`
