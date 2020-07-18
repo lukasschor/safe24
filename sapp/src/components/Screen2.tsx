@@ -32,7 +32,7 @@ const Screen2: React.FC<Props> = ({ action }) => {
       <Text size="md">Add more funds to extend your Safe24 membership.</Text>
       <br /><br />
 
-
+<div>
       <Select
         items={items}
         activeItemId={activeItemId}
@@ -40,6 +40,8 @@ const Screen2: React.FC<Props> = ({ action }) => {
           setActiveItemId(id);
         }}
       />
+      <Text size="md">2 Dai</Text>
+</div>
       <br /><br />
 
 
