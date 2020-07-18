@@ -1,0 +1,8 @@
+<svg id="allowances-1" xmlns="http://www.w3.org/2000/svg" width="108" height="96" viewBox="0 0 108 96">
+  <path id="Path_65" data-name="Path 65" d="M0,0H108V96H0Z" fill="none" fill-rule="evenodd" opacity="0.557"/>
+  <path id="Path_66" data-name="Path 66" d="M54,4A46,46,0,1,1,8,50,46,46,0,0,1,54,4" fill="#f7f5f5" fill-rule="evenodd"/>
+  <g id="Group_56" data-name="Group 56">
+    <path id="Path_67" data-name="Path 67" d="M83.653,43.747h-7.77v-7.77a2,2,0,0,0-4,0v7.77H64.117a2,2,0,0,0,0,4h7.767v7.768a2,2,0,0,0,4,0V47.747h7.769a2,2,0,0,0,0-4" transform="translate(5 24)" fill="#008c73" fill-rule="evenodd"/>
+    <path id="Path_68" data-name="Path 68" d="M42.12,16.726a6.665,6.665,0,1,1,6.665,6.664,6.673,6.673,0,0,1-6.665-6.664m26.26,20.668c-3.41-6.652-8.073-10.436-14.173-11.5a10.661,10.661,0,1,0-9.805.543C35.3,29.24,31.422,38.371,29.05,46.5a2,2,0,1,0,3.84,1.119c3.69-12.652,8.945-18.05,17.57-18.053,6.424,0,10.987,3.067,14.362,9.65A2,2,0,0,0,68.381,37.4" transform="translate(5 24)" fill="#008c73" fill-rule="evenodd"/>
+  </g>
+</svg>
