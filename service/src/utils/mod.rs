@@ -3,6 +3,8 @@ use rocket::request::{self, FromRequest, Request};
 use rocket::Outcome;
 use rocket::State;
 
+pub mod cors;
+
 pub struct Context<'a, 'r> {
     request: &'a Request<'r>,
 }
