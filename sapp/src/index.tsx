@@ -9,6 +9,7 @@ import SafeProvider from '@rmeissner/safe-apps-react-sdk';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '@gnosis.pm/safe-react-components';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>

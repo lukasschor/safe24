@@ -1,6 +1,6 @@
 
 import React, { useState, useCallback, useMemo, useEffect } from 'react'
-import { Button, Card, Icon, Title, Select, Text } from '@gnosis.pm/safe-react-components';
+import { Button, Card, Icon, Divider, Title, Select, Text } from '@gnosis.pm/safe-react-components';
 import TextField from '@material-ui/core/TextField';
 import styled from 'styled-components';
 import { useSafe } from '@rmeissner/safe-apps-react-sdk';
@@ -52,7 +52,7 @@ const Screen2: React.FC<Props> = ({ action }) => {
       <Text size="lg">Your Safe: {safe.getSafeInfo().safeAddress}</Text>
       <Text size="lg">Membership for this Safe is valid until:</Text>
       <br /><br />
-      <TextContainer>
+      <TextContainer style={{ margin: "0px 0px 32px"}}>
         <div justify-content="left" style={{ margin: "8px" }}>
           <img src={time} alt="image"></img>
         </div>
@@ -60,7 +60,8 @@ const Screen2: React.FC<Props> = ({ action }) => {
           <Text size="lg" strong>{validUntil}</Text>
         </div>
       </TextContainer>
-      <br /><br />
+
+      <Divider />
       <Text size="xl" strong>Top up</Text>
       <br /><br />
       <Text size="lg">Extend your Safe24 membership for an additional week ($5) or month ($20).</Text>
