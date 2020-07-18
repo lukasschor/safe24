@@ -6,12 +6,21 @@ import styled from 'styled-components';
 import { useSafe } from '@rmeissner/safe-apps-react-sdk';
 import time from './image4.svg';
 import '../App.css';
+import axios from 'axios'
 
 type SelectItem = {
   id: string;
   label: string;
   iconUrl?: string;
 }
+
+const TextContainer = styled.div`
+display: flex;
+justify-content: start;
+margin: 0rem 0 0rem 0;
+align-items: center
+`;
+
 interface Props {
   action: () => void
 }
@@ -22,26 +31,33 @@ const Screen2: React.FC<Props> = ({ action }) => {
     { id: '2', label: '1 month ($20)' },
   ];
 
-  const TextContainer = styled.div`
-  display: flex;
-  justify-content: start;
-  margin: 0rem 0 0rem 0;
-  align-items: center
-`;
 
+  const [validUntil, setValidUntil] = useState('');
   const [activeItemId, setActiveItemId] = useState('');
+
+  useEffect(() => {
+    const loadMembershipStatus = async () => {
+      //const resp = { data: { validUntil:1595177659,active:false} }
+      const resp = await axios.get(`https://safe24-services.herokuapp.com/membership/status/${safe.getSafeInfo().safeAddress}`)
+      const status = resp.data.active ? (new Date(resp.data.validUntil * 1000)).toLocaleDateString() : "No membership activated for this Safe"
+      setValidUntil(status)
+    }
+    loadMembershipStatus()
+  }, [setValidUntil, safe])
+
   return (
     <>
       <Text size="xl" strong>Safe24 Membership</Text>
       <br /><br />
-      <Text size="lg">Your membership is valid for:</Text>
+      <Text size="lg">Your Safe: {safe.getSafeInfo().safeAddress}</Text>
+      <Text size="lg">Membership for this Safe is valid until:</Text>
       <br /><br />
       <TextContainer>
         <div justify-content="left" style={{ margin: "8px" }}>
           <img src={time} alt="image"></img>
         </div>
         <div justify-content="left" style={{ margin: "8px" }}>
-          <Text size="lg" strong>No membership activated for this Safe</Text>
+          <Text size="lg" strong>{validUntil}</Text>
         </div>
       </TextContainer>
       <br /><br />
@@ -61,7 +77,7 @@ const Screen2: React.FC<Props> = ({ action }) => {
             }}
           />
         </div>
-        <div style={{ margin: "8px", flex: "1 1 0px"}}>
+        <div style={{ margin: "8px", flex: "1 1 0px" }}>
           <Button size="lg" color="primary" variant="contained" onClick={action}>
             Extend membership
     </Button>

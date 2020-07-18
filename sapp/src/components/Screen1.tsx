@@ -42,7 +42,7 @@ const Screen1: React.FC<Props> = ({ action }) => {
         <div justify-content="center" style={{ margin: "8px", flex: "1 1 0px"}}>
         <img src={onboarding1} alt="image"></img>
           <Text size="xl" strong center>
-            1) Setup Safe
+            1) Join Safe24
           </Text>
           <Text size="lg" center>
             Become a member of Safe24 for just 5 DAI per week
@@ -66,6 +66,10 @@ const Screen1: React.FC<Props> = ({ action }) => {
   </Text>
           <Text size="lg" center>
             We will cover all your transaction fees.
+  </Text>
+
+  <Text size="lg" center>
+            {safe.getSafeInfo().safeAddress}
   </Text>
         </div>
       </TextContainer>
