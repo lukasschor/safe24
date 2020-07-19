@@ -27,7 +27,7 @@ const Screen1: React.FC<Props> = ({ action }) => {
     <>
       <Text size="xl" strong>Safe24 - Your Gas Subscription Service</Text>
       <br />
-      <Text size="lg">Safe24 allows you to never mind about transaction fees again. We take care of setting the right gas price, paying the fees and making sure the transaction gets executed on time. No need to hold ETH on your signer wallet to execute transactions.</Text>
+      <Text size="lg">This Safe App allows you to never mind about transaction fees again. Safe24 takes care of setting the right gas price, paying the fees and making sure the transaction gets executed on time. No need to hold ETH on your signer wallet to execute transactions.</Text>
       <br />
       <Text size="lg"><b>Important:</b> <br /> <ul> <li>Safe24 never has access to any of your funds or can initiate a transaction that was not previously confirmed by you. </li> <li>Safe24 just relays transactions that have already been signed.</li> <li>To get your transactions relayed by Safe24, collect all signatures and with the last signature, uncheck the checkbox to execute the transaction.</li> <li> Safe24 only works if your Safe requires > 1 signatures.</li> </ul> </Text>
       <div style={{ margin: "16px 0px 16px"}}>
@@ -58,7 +58,7 @@ const Screen1: React.FC<Props> = ({ action }) => {
             2) Enjoy free transactions
   </Text>
           <Text size="lg" center>
-          <br />We will cover all your transaction fees.
+          <br />Safe24 covers all your transaction fees.
   </Text>
         </div>
 
