@@ -53,24 +53,26 @@ const Screen1: React.FC<Props> = ({ action }) => {
         </div>
 
         <div justify-content="center" style={{ margin: "8px", flex: "1 1 0px" }}>
+        <img src={onboarding3} alt="image" style={{ margin: "16px 0px 16px"}}></img>
+          <Text size="xl" strong center>
+            2) Enjoy free transactions
+  </Text>
+          <Text size="lg" center>
+          <br />We will cover all your transaction fees.
+  </Text>
+        </div>
+
+        <div justify-content="center" style={{ margin: "8px", flex: "1 1 0px" }}>
         <img src={onboarding2} alt="image" style={{ margin: "16px 0px 16px"}}></img>
           <Text size="xl" strong center>
-            2) Top up membership
+            3) Top up membership
           </Text>
           <Text size="lg" center>
           <br />Extend your membership on a weekly or monthly basis
           </Text>
         </div>
 
-        <div justify-content="center" style={{ margin: "8px", flex: "1 1 0px" }}>
-        <img src={onboarding3} alt="image" style={{ margin: "16px 0px 16px"}}></img>
-          <Text size="xl" strong center>
-            3) Enjoy free transactions
-  </Text>
-          <Text size="lg" center>
-          <br />We will cover all your transaction fees.
-  </Text>
-        </div>
+
       </TextContainer>
 
     </>
