@@ -78,16 +78,16 @@ const Screen2: React.FC<Props> = ({ action }) => {
             }}
           />
         </div>
-        <div style={{ margin: "8px", flex: "1 1 0px" }}>
+        <div style={{ margin: "0px 0px 0px 16px", flex: "1 1 0px" }}>
           <Button size="lg" color="primary" variant="contained" onClick={action}>
             Extend membership
     </Button>
         </div>
       </TextContainer>
 
+      <br /><br /><br />
 
-
-
+      <Text size="lg">The Safe24 codebase is open source. <a href="https://github.com/lukasschor/safe24" target="_blank">Check it on Github.</a></Text>
 
     </>
   )
