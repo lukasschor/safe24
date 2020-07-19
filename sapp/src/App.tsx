@@ -16,6 +16,7 @@ const App = () => {
   const safe = useSafe()
   return (
     <>
+    
       {(activeScreen == 0) ? (
         <Screen1 action={switchScreen} />
       ) : (

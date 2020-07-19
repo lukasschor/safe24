@@ -48,11 +48,11 @@ const Screen2: React.FC<Props> = ({ action }) => {
   return (
     <>
       <Text size="xl" strong>Safe24 Membership</Text>
-      <br /><br />
+      <br />
       <Text size="lg">Your Safe: {safe.getSafeInfo().safeAddress}</Text>
-      <Text size="lg">Membership for this Safe is valid until:</Text>
-      <br /><br />
-      <TextContainer style={{ margin: "0px 0px 32px"}}>
+      <Text size="lg"><br />The membership for this Safe is valid until:</Text>
+      <br />
+      <TextContainer style={{ margin: "0px 0px 16px"}}>
         <div justify-content="left" style={{ margin: "8px" }}>
           <img src={time} alt="image"></img>
         </div>
@@ -63,9 +63,9 @@ const Screen2: React.FC<Props> = ({ action }) => {
 
       <Divider />
       <Text size="xl" strong>Top up</Text>
-      <br /><br />
+      <br />
       <Text size="lg">Extend your Safe24 membership for an additional week ($5) or month ($20).</Text>
-      <br /><br />
+      <br />
 
 
       <TextContainer>

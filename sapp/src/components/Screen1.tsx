@@ -25,12 +25,12 @@ const Screen1: React.FC<Props> = ({ action }) => {
   const safe = useSafe()
   return (
     <>
-      <Text size="xl" strong>Safe24 - Your gas fee subscription service</Text>
-      <br /><br />
-      <Text size="lg">Safe24 allows you to never mind about transaction fees again. We take care of setting the right gas price, paying the fees and making sure the transaction gets executed on time.</Text>
-      <br /><br />
-      <Text size="lg"><b>Important:</b> Safe24 never has access to any of your funds or can initiate a transaction that was not previously confirmed by you. Safe24 just relays transactions that have already been signed for this Safe but not yet executed. </Text>
-      <div style={{ margin: "32px 0px 32px"}}>
+      <Text size="xl" strong>Safe24 - Your Gas Subscription Service</Text>
+      <br />
+      <Text size="lg">Safe24 allows you to never mind about transaction fees again. We take care of setting the right gas price, paying the fees and making sure the transaction gets executed on time. No need to hold ETH on your signer wallet to execute transactions.</Text>
+      <br />
+      <Text size="lg"><b>Important:</b> <br /> <ul> <li>Safe24 never has access to any of your funds or can initiate a transaction that was not previously confirmed by you. </li> <li>Safe24 just relays transactions that have already been signed.</li> <li>To get your transactions relayed by Safe24, collect all signatures and with the last signature, uncheck the checkbox to execute the transaction.</li> <li> Safe24 only works if your Safe requires > 1 signatures.</li> </ul> </Text>
+      <div style={{ margin: "16px 0px 16px"}}>
         <Button size="lg" color="primary" variant="contained" onClick={action}>
           Membership Dashboard
     </Button>
@@ -43,32 +43,32 @@ const Screen1: React.FC<Props> = ({ action }) => {
 
       <TextContainer>
         <div justify-content="center" style={{ margin: "8px", flex: "1 1 0px"}}>
-        <img src={onboarding1} alt="image" style={{ margin: "16px 0px 32px"}}></img>
+        <img src={onboarding1} alt="image" style={{ margin: "16px 0px 16px"}}></img>
           <Text size="xl" strong center>
             1) Join Safe24
           </Text>
           <Text size="lg" center>
-            Become a member of Safe24 for just $5 per week
+          <br />Become a member of Safe24 for just $5 per week
           </Text>
         </div>
 
         <div justify-content="center" style={{ margin: "8px", flex: "1 1 0px" }}>
-        <img src={onboarding2} alt="image" style={{ margin: "16px 0px 32px"}}></img>
+        <img src={onboarding2} alt="image" style={{ margin: "16px 0px 16px"}}></img>
           <Text size="xl" strong center>
             2) Top up weekly or monthly
           </Text>
           <Text size="lg" center>
-            You can extend your membership on a weekly or monthly basis
+          <br />You can extend your membership on a weekly or monthly basis
           </Text>
         </div>
 
         <div justify-content="center" style={{ margin: "8px", flex: "1 1 0px" }}>
-        <img src={onboarding3} alt="image" style={{ margin: "16px 0px 32px"}}></img>
+        <img src={onboarding3} alt="image" style={{ margin: "16px 0px 16px"}}></img>
           <Text size="xl" strong center>
             3) Enjoy free transactions
   </Text>
           <Text size="lg" center>
-            We will cover all your transaction fees.
+          <br />We will cover all your transaction fees.
   </Text>
         </div>
       </TextContainer>
