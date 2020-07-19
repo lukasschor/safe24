@@ -55,10 +55,10 @@ const Screen1: React.FC<Props> = ({ action }) => {
         <div justify-content="center" style={{ margin: "8px", flex: "1 1 0px" }}>
         <img src={onboarding2} alt="image" style={{ margin: "16px 0px 16px"}}></img>
           <Text size="xl" strong center>
-            2) Top up weekly or monthly
+            2) Top up membership
           </Text>
           <Text size="lg" center>
-          <br />You can extend your membership on a weekly or monthly basis
+          <br />Extend your membership on a weekly or monthly basis
           </Text>
         </div>
 
