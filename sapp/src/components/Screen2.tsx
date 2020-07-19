@@ -39,7 +39,7 @@ const Screen2: React.FC<Props> = ({ action }) => {
     const loadMembershipStatus = async () => {
       //const resp = { data: { validUntil:1595177659,active:false} }
       const resp = await axios.get(`https://safe24-services.herokuapp.com/membership/status/${safe.getSafeInfo().safeAddress}`)
-      const status = resp.data.active ? (new Date(resp.data.validUntil * 1000)).toLocaleDateString() : "No membership activated for this Safe"
+      const status = resp.data.active ? (new Date(resp.data.validUntil * 1000)).toLocaleDateString() : "No membership activated for this Safe. Extend it below."
       setValidUntil(status)
     }
     loadMembershipStatus()
