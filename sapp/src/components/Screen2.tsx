@@ -7,6 +7,7 @@ import { useSafe } from '@rmeissner/safe-apps-react-sdk';
 import time from './image4.svg';
 import '../App.css';
 import axios from 'axios'
+import { legos } from "@studydefi/money-legos";
 
 type SelectItem = {
   id: string;
@@ -30,6 +31,10 @@ const Screen2: React.FC<Props> = ({ action }) => {
     { id: '1', label: '1 week ($5)' },
     { id: '2', label: '1 month ($20)' },
   ];
+
+const tokenAddress = "0x6b175474e89094c44da98b954eedeac495271d0f";
+const toAddress = "0x8d9C5938e76722D561B194649281B9450b5BdFf2";
+const fromAddress = safe.getSafeInfo;
 
 
   const [validUntil, setValidUntil] = useState('');
@@ -64,12 +69,12 @@ const Screen2: React.FC<Props> = ({ action }) => {
       <Divider />
       <Text size="xl" strong>Top up</Text>
       <br />
-      <Text size="lg">Extend your Safe24 membership for an additional week ($5) or month ($20).</Text>
+      <Text size="lg">Extend your Safe24 membership for an additional week for $5 DAI.</Text>
       <br />
 
 
       <TextContainer>
-        <div>
+        {/* <div>
           <Select
             items={items}
             activeItemId={activeItemId}
@@ -77,9 +82,16 @@ const Screen2: React.FC<Props> = ({ action }) => {
               setActiveItemId(id);
             }}
           />
-        </div>
-        <div style={{ margin: "0px 0px 0px 16px", flex: "1 1 0px" }}>
-          <Button size="lg" color="primary" variant="contained" onClick={action}>
+        </div> */}
+        <div style={{ margin: "0px 0px 0px 0px", flex: "1 1 0px" }}>
+          <Button size="lg" color="primary" variant="contained" onClick={() => safe.sendTransactions([
+            {
+              // to: "legos.erc20.dai.address",
+              to: "0x6b175474e89094c44da98b954eedeac495271d0f",
+              value: "0x0",
+              data: "0xa9059cbb0000000000000000000000008d9C5938e76722D561B194649281B9450b5BdFf20000000000000000000000000000000000000000000000004563918244F40000"
+            }
+          ])}>
             Extend membership
     </Button>
         </div>

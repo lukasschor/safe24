@@ -68,7 +68,7 @@ const Screen1: React.FC<Props> = ({ action }) => {
             3) Top up membership
           </Text>
           <Text size="lg" center>
-          <br />Extend your membership on a weekly or monthly basis
+          <br />Extend your membership on a weekly basis
           </Text>
         </div>
 
